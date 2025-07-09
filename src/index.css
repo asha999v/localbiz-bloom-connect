@@ -2,41 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* LocalBiz AI Design System - Earthy, warm colors for community-focused platform */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Warm beige background */
+    --background: 35 25% 97%;
+    --foreground: 25 30% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Soft card backgrounds */
+    --card: 35 35% 95%;
+    --card-foreground: 25 30% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 35 35% 95%;
+    --popover-foreground: 25 30% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Fresh green primary - representing growth and sustainability */
+    --primary: 142 70% 35%;
+    --primary-foreground: 35 25% 97%;
+    --primary-light: 142 60% 45%;
+    --primary-dark: 142 75% 25%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Warm earth secondary */
+    --secondary: 25 40% 85%;
+    --secondary-foreground: 25 30% 20%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Soft muted tones */
+    --muted: 35 20% 90%;
+    --muted-foreground: 25 15% 50%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Rich brown accent */
+    --accent: 20 50% 70%;
+    --accent-foreground: 25 30% 15%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 35 25% 97%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 25 20% 85%;
+    --input: 25 20% 90%;
+    --ring: 142 70% 35%;
 
-    --radius: 0.5rem;
+    /* Gradients for warmth and depth */
+    --gradient-primary: linear-gradient(135deg, hsl(142 70% 35%), hsl(142 60% 45%));
+    --gradient-warm: linear-gradient(135deg, hsl(35 45% 88%), hsl(25 40% 85%));
+    --gradient-hero: linear-gradient(135deg, hsl(142 70% 35%), hsl(142 60% 45%), hsl(35 45% 75%));
+    --gradient-earth: linear-gradient(180deg, hsl(20 50% 70%), hsl(25 45% 65%));
+
+    /* Shadows with warm undertones */
+    --shadow-warm: 0 4px 20px hsl(25 30% 15% / 0.1);
+    --shadow-green: 0 8px 25px hsl(142 70% 35% / 0.15);
+    --shadow-card: 0 2px 15px hsl(25 20% 50% / 0.08);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
